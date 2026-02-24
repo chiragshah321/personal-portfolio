@@ -116,6 +116,25 @@ export default function Home() {
             {about.heroHeading || "I build products at the intersection of data and human behavior."}
           </h1>
 
+          {/* Mobile-only photo — shown between heading and bio on small screens */}
+          <div className="hero-photo-inline" style={{ position: "relative", height: "260px", margin: "1.5rem 0" }}>
+            <div className="photo-frame">
+              {about.photoUrl ? (
+                <Image src={about.photoUrl} alt="Profile photo" fill className="object-cover" priority />
+              ) : (
+                <div
+                  className="w-full h-full flex flex-col items-center justify-center"
+                  style={{ background: "linear-gradient(160deg, #D4E0D5 0%, #C8B89A 60%, #B8A88A 100%)", gap: "1rem" }}
+                >
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1C1B18" strokeWidth="1" style={{ opacity: 0.25 }}>
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                  </svg>
+                </div>
+              )}
+            </div>
+          </div>
+
           {about.bio.slice(0, 2).map((paragraph, i) => (
             <p
               key={i}

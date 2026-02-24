@@ -106,6 +106,9 @@ nav a { cursor: pointer; }
 .animate-fade-up-late   { animation: fadeUp 0.7s 0.3s ease both; }
 .animate-blink          { animation: blink 2.5s infinite; }
 
+/* Desktop: hide the mobile-only inline photo */
+.hero-photo-inline { display: none; }
+
 /* ── Mobile Responsive ── */
 @media (max-width: 768px) {
   /* Section padding: px-16 → px-5 */
@@ -151,8 +154,11 @@ nav a { cursor: pointer; }
   /* Hero text: full width, no right padding */
   .hero-text { padding-right: 0 !important; }
 
-  /* Hero photo: show below text on mobile at reduced height */
-  .hero-photo { height: 260px !important; }
+  /* Desktop column photo: hide on mobile (inline version used instead) */
+  .hero-photo { display: none !important; }
+
+  /* Mobile inline photo: show between heading and bio */
+  .hero-photo-inline { display: block; }
 
   /* Bio continued: single column */
   .bio-grid { grid-template-columns: 1fr !important; }
