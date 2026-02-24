@@ -4,20 +4,31 @@ import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
+  weight: ["300", "400"],
   style: ["normal", "italic"],
   variable: "--font-cormorant",
+  display: "swap",
+  preload: true,
 });
 
 const jost = Jost({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400"],
   variable: "--font-jost",
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
   title: "Chirag Shah",
-  description: "Senior Product Manager",
+  description:
+    "Product Manager building in health, property, and insurance tech — where regulation, data, and real life collide.",
+  openGraph: {
+    title: "Chirag Shah",
+    description:
+      "Product Manager building in health, property, and insurance tech.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
