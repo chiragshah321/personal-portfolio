@@ -3,25 +3,105 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #F0F6FA;
+  --fg: #1B2631;
+  --sage: #1F6E8C;
+  --warm: #3F4E4F;
+  --light: #C8DCE6;
+  --mid: #3D5A6E;
+  --card: #FFFFFF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #1B2631;
+  --fg: #EFF4F8;
+  --sage: #7EC8E3;
+  --warm: #A5C8D6;
+  --light: #2A3A46;
+  --mid: #8BAAB8;
+  --card: #212F3D;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-jost), sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Pointer cursor on all nav links */
+nav a { cursor: pointer; }
+
+/* Photo frame */
+.photo-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 20px 60px rgba(28, 27, 24, 0.12),
+    0 4px 16px rgba(28, 27, 24, 0.06);
 }
+
+/* Nav active underline */
+.nav-link-active {
+  position: relative;
+  color: var(--fg) !important;
+}
+
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0.9rem;
+  right: 0.9rem;
+  height: 1px;
+  background: var(--sage);
+}
+
+/* Hero eyebrow line */
+.hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--sage);
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
+/* Ghost button arrow */
+.btn-ghost::after {
+  content: '→';
+  transition: transform 0.2s;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.btn-ghost:hover::after {
+  transform: translateX(3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.animate-fade-in        { animation: fadeIn 0.6s ease both; }
+.animate-fade-up        { animation: fadeUp 0.7s 0.1s ease both; }
+.animate-fade-up-late   { animation: fadeUp 0.7s 0.3s ease both; }
+.animate-blink          { animation: blink 2.5s infinite; }

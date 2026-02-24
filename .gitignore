@@ -31,6 +31,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# source PDFs (content is already extracted to markdown)
+content/blog posts/
+
+# design artifacts
+design-3-about-home.html
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
