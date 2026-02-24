@@ -151,8 +151,8 @@ nav a { cursor: pointer; }
   /* Hero text: full width, no right padding */
   .hero-text { padding-right: 0 !important; }
 
-  /* Hero photo: hide on mobile */
-  .hero-photo { display: none !important; }
+  /* Hero photo: show below text on mobile at reduced height */
+  .hero-photo { height: 260px !important; }
 
   /* Bio continued: single column */
   .bio-grid { grid-template-columns: 1fr !important; }

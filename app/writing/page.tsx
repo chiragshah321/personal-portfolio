@@ -33,7 +33,7 @@ export default function Writing() {
             { label: "About", href: "/" },
             { label: "Work", href: "/work" },
             { label: "Writing", href: "/writing" },
-            { label: "Contact", href: "/#connect" },
+            { label: "Connect", href: "/#connect" },
           ].map(({ label, href }) => (
             <a
               key={label}
