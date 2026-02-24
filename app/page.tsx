@@ -14,7 +14,7 @@ export default function Home() {
         style={{ background: "var(--bg)", borderColor: "var(--light)" }}
       >
         {/* Identity */}
-        <a href="/" style={{ textDecoration: "none", color: "inherit", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+        <a href="/" className="nav-id" style={{ textDecoration: "none", color: "inherit", display: "flex", alignItems: "center", gap: "0.75rem" }}>
           <div
             className="w-[34px] h-[34px] rounded-full grid place-items-center text-white shrink-0"
             style={{
@@ -32,7 +32,7 @@ export default function Home() {
         </a>
 
         {/* Links */}
-        <div className="flex items-center" style={{ gap: "0.15rem" }}>
+        <div className="flex items-center nav-links" style={{ gap: "0.15rem" }}>
           {[
             { label: "About", href: "/" },
             { label: "Work", href: "/work" },
@@ -58,10 +58,10 @@ export default function Home() {
         </div>
 
         {/* Status + Theme */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 nav-right">
           {about.status && (
             <div
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 nav-status"
               style={{
                 fontSize: "0.6rem",
                 color: "var(--sage)",
@@ -81,7 +81,7 @@ export default function Home() {
 
       {/* ── Hero ── */}
       <section
-        className="animate-fade-up grid items-center mx-auto px-16"
+        className="animate-fade-up grid items-center mx-auto px-16 hero-grid"
         style={{
           gridTemplateColumns: "1fr 420px",
           gap: 0,
@@ -90,7 +90,7 @@ export default function Home() {
         }}
       >
         {/* Left: text */}
-        <div style={{ paddingRight: "5rem", paddingTop: "4rem", paddingBottom: "4rem" }}>
+        <div className="hero-text" style={{ paddingRight: "5rem", paddingTop: "4rem", paddingBottom: "4rem" }}>
           <div
             className="hero-eyebrow flex items-center mb-6"
             style={{
@@ -212,7 +212,7 @@ export default function Home() {
         </div>
 
         {/* Right: photo */}
-        <div style={{ position: "relative", height: "560px", alignSelf: "center" }}>
+        <div className="hero-photo" style={{ position: "relative", height: "560px", alignSelf: "center" }}>
           <div className="photo-frame">
             {about.photoUrl ? (
               <Image
@@ -257,7 +257,7 @@ export default function Home() {
           className="animate-fade-up-late mx-auto px-16 pb-12"
           style={{ maxWidth: "1200px", borderTop: "1px solid var(--light)", paddingTop: "3rem" }}
         >
-          <div className="grid" style={{ gridTemplateColumns: "1fr 1fr", gap: "3rem" }}>
+          <div className="grid bio-grid" style={{ gridTemplateColumns: "1fr 1fr", gap: "3rem" }}>
             {about.bio.slice(2).map((paragraph, i) => (
               <p key={i} style={{ fontSize: "1rem", lineHeight: 1.85, color: "var(--mid)" }}>
                 {paragraph}
@@ -291,7 +291,7 @@ export default function Home() {
         </div>
 
         <div
-          className="grid"
+          className="grid proj-grid"
           style={{ gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }}
         >
           {projects.map((project) => (
@@ -379,7 +379,7 @@ export default function Home() {
 
       {/* ── Extras ── */}
       <div
-        className="animate-fade-up-late mx-auto grid"
+        className="animate-fade-up-late mx-auto grid extras-grid"
         style={{
           borderTop: "1px solid var(--light)",
           maxWidth: "1200px",

@@ -105,3 +105,78 @@ nav a { cursor: pointer; }
 .animate-fade-up        { animation: fadeUp 0.7s 0.1s ease both; }
 .animate-fade-up-late   { animation: fadeUp 0.7s 0.3s ease both; }
 .animate-blink          { animation: blink 2.5s infinite; }
+
+/* ── Mobile Responsive ── */
+@media (max-width: 768px) {
+  /* Section padding: px-16 → px-5 */
+  .px-16 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Nav: wrap to two rows, auto height */
+  nav.border-b {
+    flex-wrap: wrap;
+    height: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  /* Row 1 left: identity link */
+  .nav-id { flex: 1 1 auto; }
+
+  /* Row 1 right: theme toggle */
+  .nav-right { order: 2; }
+
+  /* Row 2: nav links centered */
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 0.25rem;
+  }
+
+  /* Status indicator: hide on mobile */
+  .nav-status { display: none !important; }
+
+  /* Hero: single column, auto height */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+
+  /* Hero text: full width, no right padding */
+  .hero-text { padding-right: 0 !important; }
+
+  /* Hero photo: hide on mobile */
+  .hero-photo { display: none !important; }
+
+  /* Bio continued: single column */
+  .bio-grid { grid-template-columns: 1fr !important; }
+
+  /* Projects grid: single column */
+  .proj-grid { grid-template-columns: 1fr !important; }
+
+  /* Extras grid: single column, reduce padding */
+  .extras-grid {
+    grid-template-columns: 1fr !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  /* Work timeline: single column */
+  .timeline-row {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Article pages: reduce top padding */
+  article.animate-fade-up { padding-top: 3rem !important; }
+}
+
+@media (max-width: 480px) {
+  .nav-links a { padding: 0.3rem 0.5rem; }
+}

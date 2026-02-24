@@ -17,7 +17,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
         className="animate-fade-in sticky top-0 z-50 flex items-center justify-between px-16 h-16 border-b"
         style={{ background: "var(--bg)", borderColor: "var(--light)" }}
       >
-        <a href="/" style={{ textDecoration: "none", color: "inherit", display: "flex", alignItems: "center", gap: "0.75rem" }}>
+        <a href="/" className="nav-id" style={{ textDecoration: "none", color: "inherit", display: "flex", alignItems: "center", gap: "0.75rem" }}>
           <div
             className="w-[34px] h-[34px] rounded-full grid place-items-center text-white shrink-0"
             style={{
@@ -34,7 +34,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           </div>
         </a>
 
-        <div className="flex items-center" style={{ gap: "0.15rem" }}>
+        <div className="flex items-center nav-links" style={{ gap: "0.15rem" }}>
           {[
             { label: "About", href: "/" },
             { label: "Work", href: "/work" },
@@ -58,8 +58,8 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           ))}
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "0.75rem" }}>
-          <div className="flex items-center gap-2" style={{ fontSize: "0.6rem", color: "var(--sage)", letterSpacing: "0.06em" }}>
+        <div className="nav-right" style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: "0.75rem" }}>
+          <div className="flex items-center gap-2 nav-status" style={{ fontSize: "0.6rem", color: "var(--sage)", letterSpacing: "0.06em" }}>
             <span className="animate-blink w-[5px] h-[5px] rounded-full" style={{ background: "var(--sage)" }} />
             Open to opportunities
           </div>
