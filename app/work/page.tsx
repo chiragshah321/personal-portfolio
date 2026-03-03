@@ -130,6 +130,26 @@ export default function Work() {
                   Owner
                 </span>
               )}
+              {role.skills.length > 0 && (
+                <div className="flex flex-wrap" style={{ gap: "0.4rem", marginTop: "1rem" }}>
+                  {role.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      style={{
+                        fontSize: "0.55rem",
+                        letterSpacing: "0.06em",
+                        color: "var(--mid)",
+                        border: "1px solid var(--light)",
+                        borderRadius: "2px",
+                        padding: "0.2rem 0.5rem",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Right: content */}
@@ -140,28 +160,9 @@ export default function Work() {
               <div style={{ fontSize: "0.6rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--sage)", marginBottom: "1rem" }}>
                 {role.title}
               </div>
-              <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "var(--mid)", maxWidth: "620px", marginBottom: "1.25rem" }}>
+              <p style={{ fontSize: "1rem", lineHeight: 1.85, color: "var(--mid)", maxWidth: "620px" }}>
                 {role.summary}
               </p>
-
-              {/* Skills */}
-              <div className="flex flex-wrap" style={{ gap: "0.5rem" }}>
-                {role.skills.map((skill) => (
-                  <span
-                    key={skill}
-                    style={{
-                      fontSize: "0.6rem",
-                      letterSpacing: "0.08em",
-                      color: "var(--mid)",
-                      border: "1px solid var(--light)",
-                      borderRadius: "2px",
-                      padding: "0.25rem 0.6rem",
-                    }}
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         ))}
