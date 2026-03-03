@@ -1,15 +1,15 @@
 ---
 company: Ascendo Ventures
-title: Managing Member
+title: Managing Member — Product Strategy & Operations
 period: Oct 2022 – Nov 2025
 location: Austin, TX
 owner: true
 skills:
   - P&L Ownership
-  - Business Operations
-  - Revenue Growth
+  - Funnel Optimization
   - Pricing Strategy
-  - Sales Funnel Optimization
+  - Revenue Programs
+  - Business Operations
 ---
 
-As owner and operator of Sit Means Sit Austin, held full P&L responsibility for a $1.7M revenue business — directing the initial acquisition, scaling operations, and executing a strategic exit in 2025. Grew top-line revenue 5% year-over-year, increased average order value by 37.5% through pricing and packaging changes, and launched three new revenue programs generating an additional $50K in monthly revenue. Improved the lead-to-sales conversion rate from 40% to 52% in three months through tighter funnel tracking and resource allocation.
+Owned the full product and operations strategy for Sit Means Sit Austin — a $1.7M service business — from acquisition through a successful exit in 2025. Redesigned the lead-to-conversion funnel, lifting conversion from 40% to 52% and cutting time-to-close by 50% through process standardization and CRM tooling, while sustaining a 60% close rate. Increased average order value 37.5% ($1,600 → $2,200) via strategic packaging and pricing redesign. Launched three net-new revenue programs — puppy kindergarten, board & trains, and memberships — generating $50K in incremental monthly revenue, acting as full product owner from ideation through go-to-market. Drove 5% top-line growth in 2023 through pipeline optimization, and improved customer NPS from 5 to 8 while tripling Google Business Profile reviews from 200 to 600.
