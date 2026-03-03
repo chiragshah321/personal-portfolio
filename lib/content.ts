@@ -99,6 +99,7 @@ export interface Project {
   url: string;
   status: string;
   tech: string[];
+  icon: string;
   body: string[];
 }
 
@@ -119,6 +120,7 @@ export function getProjects(): Omit<Project, "body">[] {
         url:     data.url     ?? "",
         status:  data.status  ?? "",
         tech:    data.tech    ?? [],
+        icon:    data.icon    ?? "",
       };
     });
 }
@@ -140,6 +142,7 @@ export function getProject(slug: string): Project | null {
     url:     data.url     ?? "",
     status:  data.status  ?? "",
     tech:    data.tech    ?? [],
+    icon:    data.icon    ?? "",
     body,
   };
 }

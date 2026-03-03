@@ -4,6 +4,7 @@ tagline: An AI-powered job search command center with fit scoring and strategic 
 url: ""
 status: Live
 tech: [React, Vite, Zustand, Claude API, Recharts, dnd-kit]
+icon: 🎯
 ---
 
 Problem

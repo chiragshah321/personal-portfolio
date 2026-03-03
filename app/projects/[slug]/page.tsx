@@ -97,6 +97,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             borderBottom: "1px solid var(--light)",
           }}
         >
+          {project.icon && (
+            <div style={{ fontSize: "2.5rem", lineHeight: 1, marginBottom: "1rem" }}>
+              {project.icon}
+            </div>
+          )}
           <h1
             style={{
               fontFamily: "var(--font-cormorant)",

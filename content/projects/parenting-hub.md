@@ -4,6 +4,7 @@ tagline: A family command center built for Austin parents
 url: ""
 status: Live
 tech: [Next.js, Supabase, Claude API, Google Calendar, OpenWeatherMap]
+icon: 🏡
 ---
 
 Problem

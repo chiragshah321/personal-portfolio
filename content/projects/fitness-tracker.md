@@ -4,6 +4,7 @@ tagline: A personal fitness command center with AI-powered insights
 url: ""
 status: Live
 tech: [Next.js, Supabase, Claude API, USDA API, Recharts]
+icon: 💪
 ---
 
 Problem

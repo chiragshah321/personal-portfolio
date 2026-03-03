@@ -327,6 +327,11 @@ export default function Home() {
               }}
             >
               <div>
+                {project.icon && (
+                  <div style={{ fontSize: "1.75rem", lineHeight: 1, marginBottom: "0.75rem" }}>
+                    {project.icon}
+                  </div>
+                )}
                 <h3
                   style={{
                     fontFamily: "var(--font-cormorant)",

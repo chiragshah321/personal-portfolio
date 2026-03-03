@@ -4,6 +4,7 @@ tagline: A personal job board that scrapes 15+ sources and tracks applications
 url: ""
 status: Live
 tech: [Next.js, Supabase, Playwright, Cheerio, node-cron]
+icon: 🔍
 ---
 
 Problem
