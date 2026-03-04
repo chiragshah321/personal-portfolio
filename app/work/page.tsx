@@ -136,13 +136,14 @@ export default function Work() {
                     <span
                       key={skill}
                       style={{
-                        fontSize: "0.55rem",
-                        letterSpacing: "0.06em",
-                        color: "var(--mid)",
-                        border: "1px solid var(--light)",
+                        fontSize: "0.7rem",
+                        letterSpacing: "0.04em",
+                        color: "var(--fg)",
+                        border: "1px solid var(--mid)",
                         borderRadius: "2px",
-                        padding: "0.2rem 0.5rem",
+                        padding: "0.3rem 0.7rem",
                         whiteSpace: "nowrap",
+                        opacity: 0.75,
                       }}
                     >
                       {skill}
