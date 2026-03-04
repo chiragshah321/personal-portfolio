@@ -120,10 +120,10 @@ export default function Work() {
                     fontSize: "0.55rem",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "var(--warm)",
-                    border: "1px solid var(--warm)",
+                    color: "#fff",
+                    background: "var(--warm)",
                     borderRadius: "2px",
-                    padding: "0.2rem 0.5rem",
+                    padding: "0.25rem 0.6rem",
                     width: "fit-content",
                   }}
                 >
